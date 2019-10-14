@@ -1,0 +1,241 @@
+{#<!DOCTYPE html>#}
+{#<html lang="en">#}
+{#<head>#}
+{#  <meta charset="UTF-8">#}
+{#  <meta name="viewport" content="width=device-width, initial-scale=1">#}
+{#  <title>Главная</title>#}
+{#  <link rel="stylesheet" href="../style.css">#}
+{#  <link rel="stylesheet" href="css/flexslider.css">#}
+{#  <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">#}
+{#</head>#}
+{#<body>#}
+{#  <div class="header_wrap">#}
+{#   <div class="header_contenet">#}
+{#    <img class="img_logo" src="img/logo-dark.png" alt="">#}
+{#    <img class="nav_bg_left" src="img/nav_bg_left_color.png" alt="">#}
+{#    <img class="nav_bg_right" src="img/nav_bg_right.png" alt="">#}
+{#    <input type="text" placeholder="Введите для поиска интересующий товар...">#}
+{#    <button class="search">найти <img src="img//search.png" alt=""></button>#}
+{#    <div class="header_contacts">#}
+{#      <h2 class="daily">Ежедневно с 9.00-19.00</h2>#}
+{#      <div class="header_contacts_call">#}
+{#        <img src="img/call.png" alt="">#}
+{#        <h2 class="h_number">+(380) 71 2233 32</h2>#}
+{#      </div>#}
+{#     <div class="header_contacts_call_mail">#}
+{#       <img src="img/mail.png" alt="">#}
+{#      <h6>donbassmetal@gmail.com</h6>#}
+{#     </div>#}
+{#    </div>#}
+{#    <div class="header_nav">#}
+{#       <input type="checkbox" id="Tmenu" name="toggle"  class="toggle_menu">#}
+{#       <label for="Tmenu" class="toggle_menu"><i class="fa fa-bars" aria-hidden="true"></i>Меню</label>#}
+{#      <ul>#}
+{#        <li><a href="">О КОМПАНИИ</a></li>#}
+{#        <li><a href="">МЕТАЛЛОПРОДУКЦИЯ</a></li>#}
+{#        <li><a href="">МЕТАЛЛООБРАБОТКА</a></li>#}
+{#        <li><a href="">КЛИЕНТАМ</a></li>#}
+{#        <li><a href="">НОВОСТИ</a></li>#}
+{#        <li><a href="">КОНТАКТЫ</a></li>#}
+{#      </ul>#}
+{#    </div>#}
+{#   </div>#}
+{#  </div>#}
+{#  <div class="header_wrap_red_line"></div>#}
+{#  #}
+
+{% extends "layout.html" %}
+{% load staticfiles %}
+{% block content %}
+  
+  <section class="slider">
+    <div class="flexslider">
+        <ul class="slides">
+            <li>
+                <img src="img/caroosel.png" />
+            </li>
+            <li>
+                <img src="img/caroosel.png" />
+            </li>
+            <li>
+                <img src="img/caroosel.png" />
+            </li>
+        </ul>
+    </div>
+  </section>
+  
+  <h1>НАШИ УСЛУГИ</h1>
+  
+  <div class="main_content">
+  <section class="services">
+     
+      <div class="yellow_metal_top">
+        ПРОДАЖА МЕТАЛЛОПРОКАТА
+        <div class="triangle"></div>
+      </div>
+      <div class="yellow_metal_top_line"></div>
+      <div class="break"></div>
+      <div class="yellow_box_wrap">
+        <a href=""><div class="yellow_box yellow_box_1">
+          <div class="black_cont">Арматура
+            <div class="black_cont_triangle"></div>
+          </div>
+        </div></a>
+        <a href=""><div class="yellow_box yellow_box_2">
+          <div class="black_cont">Труба
+            <div class="black_cont_triangle"></div>
+          </div>
+        </div></a>
+        <a href=""><div class="yellow_box yellow_box_3">
+          <div class="black_cont">Канат
+            <div class="black_cont_triangle"></div>
+          </div>
+        </div></a>
+        <a href=""><div class="yellow_box yellow_box_4">
+            <p>Перейти в каталог</p>
+            <img src="img/right-arrow-dark.png" alt="">
+          
+      </div></a>
+      </div>
+      
+      
+      
+      <div class="yellow_metal_top red_metal_top">
+        ПРОДАЖА МЕТАЛЛОПРОКАТА
+        <div class="triangle tringle_red"></div>
+      </div>
+      <div class="yellow_metal_top_line red_metal_top_line"></div>
+      <div class="break"></div>
+      <div class="yellow_box_wrap red_box_wrap">
+        <a href=""><div class="yellow_box red_box yellow_box_1 red_box_1">
+          <div class="black_cont">Арматура
+            <div class="black_cont_triangle"></div>
+          </div>
+        </div></a>
+        <a href=""><div class="yellow_box red_box yellow_box_2 red_box_2">
+          <div class="black_cont">Труба
+            <div class="black_cont_triangle"></div>
+          </div>
+        </div></a>
+        <a href=""><div class="yellow_box red_box yellow_box_3 red_box_3">
+          <div class="black_cont">Канат
+            <div class="black_cont_triangle"></div>
+          </div>
+        </div></a>
+        <a href=""><div class="yellow_box red_box yellow_box_4 red_box_4">
+            <p>Перейти в каталог</p>
+            <img src="img/right-arrow-white.png" alt="">
+          
+      </div></a>
+      </div>
+      
+    </section>
+  </div>
+  
+  <h1 class="why_we">ПОЧЕМУ СТОИТ ОБРАТИТЬСЯ К НАМ?</h1>
+  
+  <div class="main_content">
+  <section class="why_are_we">
+      <div class="why_box why_box_1">
+        <img src="img/medal.png" alt="">
+        <h3>Гарантия качества</h3>
+        <p class="first_p">Качество продукции  соответствует ГОСТам, ТУ и подтверждено сертификатами</p>
+      </div>
+      <div class="why_box why_box_2">
+        <img src="img/like.png" alt="">
+        <h3>Профессионализм</h3>
+        <p>Многолетний опыт квалифицированных специалистов</p>
+      </div>
+      <div class="why_box why_box_3">
+        <img src="img/weight.png" alt="">
+        <h3>Отсутствие недогруза</h3>
+        <p>Добросовестность, эффективность и  безопасность грузоперевозок</p>
+      </div>
+      <div class="why_box why_box_4">
+        <img src="img/delivery-truck.png" alt="">
+        <h3>Оперативная доставка</h3>
+        <p>Доставка металла в течение 24 часов с момента заказа, собственный парк техники</p>
+      </div>
+      <div class="why_box why_box_5">
+        <img src="img/piggy-bank.png" alt="">
+        <h3>Экономия</h3>
+        <p class="last_p">Наиболее доступные цены в Донецке и по всей территории ДНР</p>
+      </div>
+    </section>
+  </div>
+  
+  <h1 class="questions">ОСТАЛИСЬ ВОПРОСЫ?</h1>
+  
+  <div class="main_content question_content">
+    <section class="question">
+      <p class="question_text">Если у Вас возникли вопросы, то напишите нам и в ближайшее время мы с вами свяжемся</p>
+      <form action="">
+        <input type="text" placeholder="Ваше имя" required>
+        <input type="text" placeholder="Телефон" required>
+        <textarea required name="" id="" placeholder="Введите сюда ваш вопрос...">
+        </textarea>
+        <input type="submit" class="question_btn" value="Отправить">
+      </form>
+    </section>
+  </div>
+  
+  <h1 class="questions">НАМ ДОВЕРЯЮТ</h1>
+  
+  <div class="main_content faith_content">
+   <section class="faith">
+    <img class="galaxy" src="img/galaxy-logo.png" alt="">
+    <img class="grez" src="img/gerc-logo.png" alt="">
+    <img class="sity" src="img//city-stroy-logo.png" alt="">
+    <img class="met" src="img/metinvest-logo.png" alt="">
+   </section> 
+  </div>
+
+
+{% endblock %}
+{#  <div class="footer_content">#}
+{#    <section class="footer">#}
+{#      <div class="logo">#}
+{#        <img src="img/logo-dark.png" alt="">#}
+{#        <a href="#"><img src="img/logo-light.png" alt="Наше лого"></a>#}
+{#      </div>#}
+{#      <div class="address">#}
+{#        <p class="adr">Наш адрес: г. Донецк,ул. Левобережная, 55</p>#}
+{#        <p  class="tel">Контакты: +380 71 2233 32</p>#}
+{#        <p class="daily">Ежедневно с <span>9.00 - 19.00</span></p>#}
+{#        <p class="email">E-mail: donbassmetal@gmail.com</p>#}
+{#      </div>#}
+{#      <div class="footer_nav">#}
+{#        <p>Навигация</p>#}
+{#        <hr>#}
+{#        <div class="footer_nav_a">#}
+{#          <div class="footer_nav_a1">#}
+{#          <a href="">О компании</a>#}
+{#          <a href="">Металлопродукция</a>#}
+{#          <a href="">Металлообработка</a>#}
+{#        </div>#}
+{#        <div class="footer_nav_a2">#}
+{#          <a href="">Клиентам</a>#}
+{#          <a href="">Новости</a>#}
+{#          <a href="">Контакты</a>#}
+{#        </div>#}
+{#        </div>#}
+{#        #}
+{#        #}
+{#      </div>#}
+{#    </section>#}
+{#  </div>#}
+{#  #}
+{#  #}
+{#  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>#}
+{#  <script defer src="js/jquery.flexslider-min.js"></script>#}
+{#  <script type="text/javascript">#}
+{#	$(window).load(function(){#}
+{#	  $('.flexslider').flexslider({#}
+{#		animation: "slide",#}
+{#        controlNav: true,#}
+{#        directionNav: false#}
+{#	  });#}
+{#	});#}
+{#  </script>#}
+{#</body>#}
+{#</html>#}

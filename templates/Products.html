@@ -1,0 +1,218 @@
+{#<!DOCTYPE html>#}
+{#<html lang="en">#}
+{#<head>#}
+{#  <meta charset="UTF-8">#}
+{#  <meta name="viewport" content="width=device-width, initial-scale=1">#}
+{#  <title>Металлопродукция</title>#}
+{#  <link rel="stylesheet" href="../style.css">#}
+{#  <link rel="stylesheet" href="css/flexslider.css">#}
+{#  <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">#}
+{#</head>#}
+{#<body>#}
+{#  <div class="header_wrap">#}
+{#   <div class="header_contenet">#}
+{#    <img class="img_logo" src="img/logo-dark.png" alt="">#}
+{#    <img class="nav_bg_left" src="img/nav_bg_left_color.png" alt="">#}
+{#    <img class="nav_bg_right" src="img/nav_bg_right.png" alt="">#}
+{#    <input type="text" placeholder="Введите для поиска интересующий товар...">#}
+{#    <button class="search">найти <img src="img//search.png" alt=""></button>#}
+{#    <div class="header_contacts">#}
+{#      <h2 class="daily">Ежедневно с 9.00-19.00</h2>#}
+{#      <div class="header_contacts_call">#}
+{#        <img src="img/call.png" alt="">#}
+{#        <h2 class="h_number">+(380) 71 2233 32</h2>#}
+{#      </div>#}
+{#     <div class="header_contacts_call_mail">#}
+{#       <img src="img/mail.png" alt="">#}
+{#      <h6>donbassmetal@gmail.com</h6>#}
+{#     </div>#}
+{#    </div>#}
+{#    <div class="header_nav">#}
+{#      <input type="checkbox" id="Tmenu" name="toggle"  class="toggle_menu">#}
+{#      <label for="Tmenu" class="toggle_menu"><i class="fa fa-bars" aria-hidden="true"></i>Меню</label>#}
+{#      <ul>#}
+{#        <li><a href="">О КОМПАНИИ</a></li>#}
+{#        <li><a href="">МЕТАЛЛОПРОДУКЦИЯ</a></li>#}
+{#        <li><a href="">МЕТАЛЛООБРАБОТКА</a></li>#}
+{#        <li><a href="">КЛИЕНТАМ</a></li>#}
+{#        <li><a href="">НОВОСТИ</a></li>#}
+{#        <li><a href="">КОНТАКТЫ</a></li>#}
+{#      </ul>#}
+{#    </div>#}
+{#   </div>#}
+{#  </div>#}
+
+{% extends "layout.html" %}
+{% load staticfiles %}
+{% block content %}
+
+{#    <div class="header_wrap_red_line"></div>#}
+
+    <div class="metalProduct_line">
+        Арматура А1
+        <div class="metalProduct_line_left">Металлопродукция</div>
+        <div class="metalProduct_line_left_circle"></div>
+    </div>
+
+
+    <section class="main_content">
+
+        <div class="left_content">
+            <div class="left_content_wrap">
+                <input type="checkbox" id="pick" name="pick_arm" class="pick_menu">
+                <label for="pick" class="pick_menu"><i class="fa fa-cog fa-3x" aria-hidden="true"></i></label>
+                <label for="pick" class="pick_close_menu"><i class="fa fa-times-circle fa-3x"
+                                                             aria-hidden="true"></i></label>
+                <ul>
+                    <a href="#">
+                        <li>Арматура А3</li>
+                    </a>
+                    <a href="#">
+                        <li>Арматура А1</li>
+                    </a>
+                    <a href="#">
+                        <li>Катанка стальная</li>
+                    </a>
+                    <a href="#">
+                        <li>Балка двутавровая</li>
+                    </a>
+                    <a href="#">
+                        <li>Уголок стальной</li>
+                    </a>
+                    <a href="#">
+                        <li>Швеллер</li>
+                    </a>
+                    <a href="#">
+                        <li>Лист стальной</li>
+                    </a>
+                    <a href="#">
+                        <li>Круг</li>
+                    </a>
+                    <a href="#">
+                        <li>Полоса</li>
+                    </a>
+                    <a href="#">
+                        <li>Профнпстил</li>
+                    </a>
+                    <a href="#">
+                        <li>Канат</li>
+                    </a>
+                    <a href="#">
+                        <li>Труба профильная</li>
+                    </a>
+                    <a href="#">
+                        <li>Труба оцинкованная</li>
+                    </a>
+                    <a href="#">
+                        <li>Проволока</li>
+                    </a>
+                </ul>
+            </div>
+        </div>
+
+        <div class="right_content">
+            <div class="calc">
+                <div class="calc_wrap">
+                    <h4>Калькулятор расчёта стоимости</h4>
+                    <table width="100%" cellpadding="9">
+                        <tr>
+                            <td>Металл</td>
+                            <td>Диаметр</td>
+                            <td>Метраж</td>
+                            <td rowspan="2"><input class="inp_but" type="button" value="Расчитать"></td>
+                            <td>Стоимость</td>
+                        </tr>
+                        <tr>
+                            <td>Арматура А1</td>
+                            <td>
+                                <select name="" id="">
+                                    <option>10mm</option>
+                                    <option>20mm</option>
+                                    <option>30mm</option>
+                                    <option>40mm</option>
+                                </select>
+                            </td>
+                            <td><input type="text" value="0" style="width: 50px"></td>
+                            <td>0 руб.</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="calc calc_mobil">
+                <div class="calc_wrap calc_wrap_mobil">
+                    <h4>Калькулятор расчёта стоимости</h4>
+                    <table width="100%" cellpadding="9">
+                        <tr>
+                            <td>Металл</td>
+                            <td>Диаметр</td>
+                            <td>Метраж</td>
+                        </tr>
+                        <tr>
+                            <td>Арматура А1</td>
+                            <td>
+                                <select name="" id="">
+                                    <option>10mm</option>
+                                    <option>20mm</option>
+                                    <option>30mm</option>
+                                    <option>40mm</option>
+                                </select>
+                            </td>
+                            <td><input type="text" value="0" style="width: 50px"></td>
+                        </tr>
+                    </table>
+                    <input class="inp_but" type="button" value="Расчитать">
+                    <p>0 руб.</p>
+                </div>
+            </div>
+            <div class="descript">
+                <p>Описание и х арактеристики продуктв</p>
+            </div>
+        </div>
+    </section>
+
+{% endblock %}
+
+{#  <div class="footer_content">#}
+{#    <section class="footer">#}
+{#      <div class="logo">#}
+{#        <img src="img/logo-dark.png" alt="">#}
+{#        <a href="#"><img src="img/logo-light.png" alt="Наше лого"></a>#}
+{#      </div>#}
+{#      <div class="address">#}
+{#        <p class="adr">Наш адрес: г. Донецк,ул. Левобережная, 55</p>#}
+{#        <p  class="tel">Контакты: +380 71 2233 32</p>#}
+{#        <p class="daily">Ежедневно с <span>9.00 - 19.00</span></p>#}
+{#        <p class="email">E-mail: donbassmetal@gmail.com</p>#}
+{#      </div>#}
+{#      <div class="footer_nav">#}
+{#        <p>Навигация</p>#}
+{#        <hr>#}
+{#        <div class="footer_nav_a">#}
+{#          <div class="footer_nav_a1">#}
+{#          <a href="">О компании</a>#}
+{#          <a href="">Металлопродукция</a>#}
+{#          <a href="">Металлообработка</a>#}
+{#        </div>#}
+{#        <div class="footer_nav_a2">#}
+{#          <a href="">Клиентам</a>#}
+{#          <a href="">Новости</a>#}
+{#          <a href="">Контакты</a>#}
+{#        </div>#}
+{#        </div>#}
+{#      </div>#}
+{#    </section>#}
+{#  </div>#}
+{#  #}
+{#  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>#}
+{#  <script defer src="js/jquery.flexslider-min.js"></script>#}
+{#  <script type="text/javascript">#}
+{#	$(window).load(function(){#}
+{#	  $('.flexslider').flexslider({#}
+{#		animation: "slide",#}
+{#        controlNav: true,#}
+{#        directionNav: false#}
+{#	  });#}
+{#	});#}
+{#  </script>#}
+{#</body>#}
+{#</html>#}
